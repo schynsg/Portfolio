@@ -43,6 +43,39 @@ function dw_register_post_types() {
         'public' => true,
         'description' => 'A list of the social media',
         'menu_icon' => 'dashicons-share',
+        'menu_position' => 1
+    ]);
+    register_post_type('contact_link', [
+        'label' => 'Contact link',
+        'labels' => [
+            'singular_name' => 'Contact link',
+            'add_new_item' => 'Add a contact link',
+        ],
+        'public' => true,
+        'description' => 'A list of the contact links',
+        'menu_icon' => 'dashicons-phone',
+        'menu_position' => 2
+    ]);
+    register_post_type('experience', [
+        'label' => 'experience',
+        'labels' => [
+            'singular_name' => 'experience',
+            'add_new_item' => 'Add a experience',
+        ],
+        'public' => true,
+        'description' => 'A list of the experiences',
+        'menu_icon' => 'dashicons-hammer',
+        'menu_position' => 2
+    ]);
+    register_post_type('project', [
+        'label' => 'project',
+        'labels' => [
+            'singular_name' => 'project',
+            'add_new_item' => 'Add a project',
+        ],
+        'public' => true,
+        'description' => 'A list of the projects',
+        'menu_icon' => 'dashicons-admin-customizer',
         'menu_position' => 2
     ]);
 }
