@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="caa43691-4dc0-497c-bc4b-d57c10e5c56b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/personal-theme/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/personal-theme/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/personal-theme/goran-schyns.ico" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/personal-theme/src/images/goran-schyns.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/personal-theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/personal-theme/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="323">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/src/images/logo.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/functions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="699">
@@ -69,8 +75,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/src/images/logo.svg" />
+        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/header.php" />
       </list>
     </option>
   </component>
@@ -111,6 +118,23 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="personal-theme" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="personal-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="personal-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -123,6 +147,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dw-wordpress-portfolio" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\portfolio\wp-content\themes\personal-theme\src\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,12 +176,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557329086018</updated>
       <workItem from="1557329087791" duration="6864000" />
-      <workItem from="1557397853160" duration="3990000" />
+      <workItem from="1557397853160" duration="7429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10854000" />
+    <option name="totallyTimeSpent" value="14293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3847" y="-398" width="1934" height="1067" extended-state="0" />
@@ -205,17 +234,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/src/images/goran-schyns.ico">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="699">
           <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/src/images/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
