@@ -19,21 +19,24 @@
                 <span class="hidden">Goran Schyns</span>
             </a>
         </h1>
-        <nav class="main__nav">
-            <ul class="nav__ul">
-                <li class="nav__li">
-                    <a href="" class="nav__link">Home</a>
-                </li>
-                <li class="nav__li">
-                    <a href="" class="nav__link">About me</a>
-                </li>
-                <li class="nav__li">
-                    <a href="" class="nav__link">My projects</a>
-                </li>
-                <li class="nav__li">
-                    <a href="" class="nav__link">Contact me</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <h2 class="nav__h2">Main navigation</h2>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li class="nav__li">
+                        <a href="" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="" class="nav__link">My projects</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="" class="nav__link">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 	</header>
 
