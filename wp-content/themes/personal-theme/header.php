@@ -16,14 +16,14 @@
 	<header>
         <h1>
             <a href="<?= get_home_url(); ?>" class="header__link" title="Home">
-                <img src="<?= get_template_directory_uri(); ?>/src/images/logo.svg" alt="Goran Schyns, web & graphic designer">
+                <img src="<?= get_template_directory_uri(); ?>/src/images/logo.svg" alt="Goran Schyns, web & graphic designer" class="h1__img">
                 <span class="hidden">Goran Schyns</span>
             </a>
         </h1>
         <div class="nav">
-            <h2 class="nav__h2">Main navigation</h2>
-            <i id="burger" class="material-icons" onclick="burger()">Menu</i>
-            <i id="quit" class="material-icons" onclick="quit()">close</i>
+            <h2 class="nav__h2 hidden">Main navigation</h2>
+            <i id="burger" class="material-icons" onclick="burger()"><svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.74 23.02" fill="#1A1A20" height="23" width="30"><defs><style>.cls-1{fill:#1a1a20;}</style></defs><title>Sans titre - 1</title><rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="29.74" height="2.85"/><rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" y="10.09" width="20.14" height="2.85"/><rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" y="20.17" width="29.74" height="2.85"/></svg></i>
+            <i id="quit" class="material-icons" onclick="quit()">Close</i>
             <div id="links">
                 <a href="">Home</a>
                 <a href="">About me</a>

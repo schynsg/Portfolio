@@ -13,12 +13,12 @@
 
             <div class="introduction">
                 <div class="intro__text">
-                    <h2 class="intro__h2">Introduction</h2>
-                    <p class="introduction__p"><?php the_field('intro'); ?></p>
+                    <h2 class="intro__h2 hidden">Introduction</h2>
+                    <?php the_field('intro'); ?>
                 </div>
                 <div class="intro__links">
                     <a href="<?php the_field('first_link'); ?>" class="intro__first-link"><?php the_field('first_link_text'); ?></a>
-                    <a href="<?php the_field('second_link'); ?>" class="intro__first-link"><?php the_field('second_link_text'); ?></a>
+                    <a href="<?php the_field('second_link'); ?>" class="intro__second-link"><?php the_field('second_link_text'); ?></a>
                 </div>
             </div>
 
@@ -28,13 +28,13 @@
 
 
 
-        <div class="socail__media">
-            <h2 class="media__h2">My social media</h2>
+        <div class="social__media">
+            <h2 class="media__h2 hidden">My social media</h2>
             <ul class="media__ul">
                 <?php
                 $media = new WP_Query([
                     'post_type' => 'social_media',
-                    'order' => 'DESC',
+                    'order' => 'ASC',
                     'orderby' => 'date'
                 ]);
 
