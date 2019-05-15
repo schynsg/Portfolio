@@ -34,28 +34,6 @@ function dw_getMenu(){
 //Register Custom Post Type
 
 function dw_register_post_types() {
-    register_post_type('social_media', [
-        'label' => 'Social media',
-        'labels' => [
-            'singular_name' => 'Social media',
-            'add_new_item' => 'Add a social media',
-        ],
-        'public' => true,
-        'description' => 'A list of the social media',
-        'menu_icon' => 'dashicons-share',
-        'menu_position' => 1
-    ]);
-    register_post_type('contact_link', [
-        'label' => 'Contact link',
-        'labels' => [
-            'singular_name' => 'Contact link',
-            'add_new_item' => 'Add a contact link',
-        ],
-        'public' => true,
-        'description' => 'A list of the contact links',
-        'menu_icon' => 'dashicons-phone',
-        'menu_position' => 2
-    ]);
     register_post_type('experience', [
         'label' => 'experience',
         'labels' => [

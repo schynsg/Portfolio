@@ -153,12 +153,23 @@ a {
     color: #1A1A20;
     font-size: 20px;
     font-weight: bold;
-    padding: 13px 33px;
+    padding: 10px 30px;
     border-radius: 50px;
-    background-color: #C1BEBF; }
+    background-color: #C1BEBF;
+    border: 3px solid #C1BEBF;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .intro__links a:hover {
+      background-color: transparent;
+      color: #C1BEBF; }
     .intro__links a:first-of-type {
       background-color: #A77F4E;
-      margin-right: 20px; }
+      margin-right: 20px;
+      border: 3px solid #A77F4E; }
+      .intro__links a:first-of-type:hover {
+        background-color: transparent;
+        color: #A77F4E; }
 
 .social__media {
   position: absolute;
@@ -176,12 +187,21 @@ a {
     padding-right: 60px; }
   .social__media p, .social__media img {
     display: inline-block; }
-  .social__media img {
-    vertical-align: text-bottom; }
   .social__media a {
-    color: #C1BEBF; }
+    color: #C1BEBF;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .social__media a:hover {
+      color: #A77F4E; }
+      .social__media a:hover svg {
+        fill: #A77F4E; }
   .social__media svg {
-    fill: #C1BEBF; }
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    fill: #C1BEBF;
+    margin-right: 5px; }
 
 .contact {
   display: -webkit-box;
@@ -215,12 +235,21 @@ a {
       margin-bottom: 10px; }
   .contact__ul p, .contact__ul img {
     display: inline-block; }
-  .contact__ul img {
-    vertical-align: text-bottom; }
   .contact__ul a {
-    color: #C1BEBF; }
+    color: #C1BEBF;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .contact__ul a:hover {
+      color: #A77F4E; }
+      .contact__ul a:hover svg {
+        fill: #A77F4E; }
   .contact__ul svg {
-    fill: #C1BEBF; }
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    fill: #C1BEBF;
+    margin-right: 5px; }
 
 footer {
   background-color: #C1BEBF;
@@ -275,4 +304,12 @@ form {
   padding: 5px 20px;
   border-radius: 50px;
   background-color: #A77F4E;
-  border: none; }
+  font-size: 22px;
+  cursor: pointer;
+  border: 3px solid #A77F4E;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .wpcf7-submit:hover {
+    background-color: transparent;
+    color: #A77F4E; }
