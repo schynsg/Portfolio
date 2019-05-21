@@ -1,6 +1,13 @@
-<?php get_header(); ?>
+<?php
 
-<main>
+/*
+    Template Name: Homepage
+*/
+
+get_header();
+?>
+
+<main class="index__main">
     <div class="background__pic">
         <?php
         $home = new WP_Query([

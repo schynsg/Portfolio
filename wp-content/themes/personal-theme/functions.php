@@ -66,3 +66,5 @@ function wpc_mime_types($mimes) {
     return $mimes;
 }
 add_filter('upload_mimes', 'wpc_mime_types');
+
+

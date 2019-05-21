@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home | Goran Schyns</title>
+	<title><?php wp_title(''); ?></title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -30,6 +30,14 @@
                 <a href="">My projects</a>
                 <a href="">Contact me</a>
             </div>
+            <ul class="links">
+                <?php foreach (dw_getMenu('main') as $item): ?>
+
+                    <li class="links__li">
+                        <a href="<?= $item -> url; ?>" class="links__a"><?= $item -> label; ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
 	</header>
 
