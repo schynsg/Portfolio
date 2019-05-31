@@ -25,19 +25,12 @@
             <i id="burger" class="material-icons" onclick="burger()"><svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.74 23.02" fill="#1A1A20" height="23" width="30"><defs><style>.cls-1{fill:#1a1a20;}</style></defs><title>Sans titre - 1</title><rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="29.74" height="2.85"/><rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" y="10.09" width="20.14" height="2.85"/><rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" y="20.17" width="29.74" height="2.85"/></svg></i>
             <i id="quit" class="material-icons" onclick="quit()">Close</i>
             <div id="links">
-                <a href="">Home</a>
-                <a href="">About me</a>
-                <a href="">My projects</a>
-                <a href="">Contact me</a>
-            </div>
-            <ul class="links">
                 <?php foreach (dw_getMenu('main') as $item): ?>
-
-                    <li class="links__li">
                         <a href="<?= $item -> url; ?>" class="links__a"><?= $item -> label; ?></a>
-                    </li>
                 <?php endforeach; ?>
-            </ul>
+            </div>
         </div>
 	</header>
+
+
 

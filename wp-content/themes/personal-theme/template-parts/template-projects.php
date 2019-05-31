@@ -38,6 +38,7 @@ get_header();
                 ?>
 
                 <div class="project">
+                    <a href="<?php the_permalink(); ?>">
                     <div class="project__div">
                         <div class="project__title">
                             <h3 class="project__h3"><?php the_field('name'); ?></h3>
@@ -46,6 +47,7 @@ get_header();
                             <img src="<?php the_field('vignette'); ?>" alt="<?php the_field('name'); ?>">
                         </div>
                     </div>
+                    </a>
                 </div>
 
             <?php endwhile; else: ?>
