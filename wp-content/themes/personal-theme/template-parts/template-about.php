@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<main class="index__about">
+<main class="main__about">
     <?php
     $about = new WP_Query([
         'post_type' => 'page',

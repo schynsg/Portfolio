@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<main class="index__projects">
+<main class="main__projects">
     <?php
     $project = new WP_Query([
         'post_type' => 'page',

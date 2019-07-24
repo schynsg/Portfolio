@@ -9,10 +9,10 @@ get_header();
 
 ?>
 
-<main>
+<main class="no-page_main">
     <div class="404_div">
-        <h2 class="404_title">Sorry, this page doesn't exist.</h2>
-        <a href="<?= get_home_url(); ?>" class="404_link">Return home</a>
+        <h2 class="no-page_title">Sorry, this page doesn't exist.</h2>
+        <a href="<?= get_home_url(); ?>" class="no-page_link">Return home</a>
     </div>
 </main>
 

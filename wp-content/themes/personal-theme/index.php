@@ -115,6 +115,11 @@ get_header();
 
         </div>
     </div>
+
+
+
+
+     <!--
     <div class="contact">
         <div class="contact__left">
             <h2 class="contact__h2">Let's talk</h2>
@@ -173,7 +178,10 @@ get_header();
                 <?php echo do_shortcode( '[contact-form-7 id="8" title="Contact form 1"]' ); ?>
             </div>
         </div>
+
+
+        -->
     </div>
 </main>
 
-<?php get_footer(); ?>
+<script src="<?= get_template_directory_uri(); ?>/src/js/burger.js"></script>

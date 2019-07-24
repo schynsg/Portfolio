@@ -485,7 +485,7 @@ function get_search_template() {
  *
  * 1. templates/full-width.php
  * 2. single-post-hello-world.php
- * 3. single-project.php
+ * 3. single-post.php
  * 4. single.php
  *
  * The template hierarchy and template path are filterable via the {@see '$type_template_hierarchy'}

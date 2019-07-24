@@ -7,12 +7,12 @@
 get_header();
 ?>
 
-<main>
+<main class="main__single">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="project__first-part">
             <div class="first-part_left">
                 <h2 class="project_title"><?php the_field('name'); ?></h2>
-                <p class="project_description">><?php the_field('description'); ?></p>
+                <p class="project_description"><?php the_field('description'); ?></p>
                 <div class="project_links">
                     <ul class="links_ul">
                         <li class="links_li">
@@ -64,11 +64,11 @@ get_header();
                 </div>
             </div>
             <div class="first-part_right">
-                <img src="<?php the_field('vignette'); ?>" alt="<?php the_field('name'); ?>" class="project_vignette">
+                <img src="<?php the_field('vignette'); ?>" alt="<?php the_field('name'); ?>" class="project_vignette" width="432px" height="432px">
             </div>
         </div>
         <div class="project_full-screen">
-            <img src="<?php the_field('full_screen'); ?>" alt="The <?php the_field('name'); ?> full screen web page" class="full-screen_img">
+            <img src="<?php the_field('full_screen'); ?>" alt="The <?php the_field('name'); ?> full screen web page" class="full-screen_img" width="884px">
         </div>
 
     <?php endwhile; endif; ?>
