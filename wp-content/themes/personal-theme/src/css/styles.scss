@@ -58,6 +58,8 @@ main:not(.background__pic){
 
 main{
   padding-bottom: 230px;
+  max-width: 2400px;
+  margin: 0 auto;
 }
 
 .background__pic{
@@ -99,6 +101,7 @@ header{
   margin-top: 35px;
   padding-left: 3.6%;
   min-width: 230px;
+  max-width: 420px;
 }
 
 a{
