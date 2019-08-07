@@ -49,7 +49,6 @@ body{
   background-color: #1A1B20;
   color: #C1BEBF;
   font-family: 'Lato', sans-serif;
-  min-height: 100vh;
 }
 
 main:not(.background__pic){
@@ -94,6 +93,7 @@ main{
 header{
   position: absolute;
   width: 100%;
+  top: 0;
 }
 
 .h1__img{
@@ -127,6 +127,7 @@ a{
   padding: 16px;
   transition: 1s;
   cursor: pointer;
+  z-index: 2;
 }
 
 #quit{
@@ -139,6 +140,7 @@ a{
   display: none;
   cursor: pointer;
   transition: 3s;
+  z-index: 3;
 }
 
 #links{
@@ -208,7 +210,7 @@ a{
 
 .social__media{
   position: absolute;
-  top: 93.5vh;
+  top: 93vh;
   display: flex;
   flex-direction: column-reverse;
   font-size: 18px;
@@ -239,7 +241,6 @@ a{
   width: 70%;
   margin: 0 auto;
   justify-content: space-between;
-  margin-top: 189px;
   font-size: 22px;
   h2{
     font-family: 'Roboto', sans-serif;
@@ -264,7 +265,6 @@ a{
   }
   a{
     color: #C1BEBF;
-    transition: 0.5s;
     &:hover{
       color: #A77F4E;
       svg{
@@ -273,7 +273,6 @@ a{
     }
   }
   svg{
-    transition: 0.5s;
     fill: #C1BEBF;
     margin-right: 5px;
   }
@@ -284,16 +283,13 @@ footer{
   text-align: center;
   font-size: 15px;
   padding: 10px 0px;
+  z-index: 0;
+  width: 100%;
   a{
     color: #1A1A20;
   }
 }
 
-.no-page_main+footer, .main__about+footer{
-  position:absolute;
-  bottom:0;
-  width: 100%;
-}
 
 input{
   background-color: transparent;
@@ -306,11 +302,12 @@ input{
 
 label{
   text-transform: uppercase;
-  color: #A77F4E;
+  color: #C1BEBF;
 }
 
 .contact__right{
   width: 49%;
+  margin-top: 189px;
 }
 
 form{
@@ -339,14 +336,14 @@ form{
 .wpcf7-submit{
   margin-top: 40px;
   color: #1A1A20;
-  padding: 5px 20px;
+  padding: 2px 35px;
   border-radius: 50px;
   background-color: #A77F4E;
   font-size: 22px;
   cursor: pointer;
   border: 3px solid #A77F4E;
   transition: 0.5s;
-  &:hover{
+  &:active{
     background-color: transparent;
     color: #A77F4E;
   }
@@ -378,7 +375,7 @@ form{
   margin-bottom: 70px;
 }
 
-.main__about, .main__single{
+.about, .main__single, .contact__main{
   padding-top: 200px;
   margin-left: 5.8%;
   font-size: 22px;
@@ -400,12 +397,16 @@ form{
 .about__description{
   p{
     margin-bottom: 30px;
+    max-width: 700px;
+    line-height: 115%;
+    width: 35vw;
   }
 }
 
 .about__experience{
   width: 900px;
-  margin-left: 18.4%;
+  margin-left: 23.4%;
+  max-width: 80vw;
 }
 
 .description__title, .experience__title{
@@ -442,15 +443,16 @@ form{
       background-color: transparent;
       color: #C1BEBF;
     }
-    &:first-of-type{
-      background-color: #A77F4E;
-      margin-right: 20px;
-      border: 3px solid #A77F4E;
-      &:active{
-        background-color: transparent;
-        color: #A77F4E;
-      }
-    }
+  }
+}
+
+a.about__first-link{
+  background-color: #A77F4E;
+  margin-right: 20px;
+  border: 3px solid #A77F4E;
+  &:active{
+    background-color: transparent;
+    color: #A77F4E;
   }
 }
 
@@ -516,7 +518,6 @@ form{
     padding-right: 60px;
     a{
       color: #C1BEBF;
-      transition: 0.5s;
       &:hover{
         color: #A77F4E;
         svg{
@@ -526,7 +527,6 @@ form{
     }
     svg{
       fill: #C1BEBF;
-      transition: 0.5s;
       margin-right: 5px;
     }
     p{
@@ -587,5 +587,81 @@ form{
   }
   .intro__first-link{
     margin-bottom: 10px;
+  }
+}
+
+main.contact__main{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.social__contact{
+  margin-top: 35px;
+  li{
+    display: block;
+    padding-bottom: 10px;
+  }
+  p, img{
+    display: inline-block;
+  }
+  a{
+    color: #C1BEBF;
+    &:hover{
+      color: #A77F4E;
+      svg{
+        fill: #A77F4E;
+      }
+    }
+  }
+  svg{
+    fill: #C1BEBF;
+    margin-right: 5px;
+  }
+}
+
+.required__labels{
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.screen-reader-response, .wpcf7-not-valid-tip{
+  font-size: 11px;
+  margin-bottom: 10px;
+  color: red;
+  text-transform: lowercase;
+}
+
+.wpcf7-response-output{
+  display: none;
+}
+
+@media (max-width: 775px) {
+  .about__content{
+    flex-direction: column;
+    margin-top: 100px;
+    .about__description p {
+      width: 100%;
+    }
+    .about__experience{
+      margin-left: 0;
+    }
+    .about__links{
+      position: relative;
+      top: 370px;
+    }
+  }
+  .about__sub-title{
+    width: 80vw;
+  }
+}
+
+div.about__links div{
+  display: inline;
+}
+
+@media (max-width: 1150px) {
+  div.about__links div{
+    display: block;
+    margin-top: 35px;
   }
 }

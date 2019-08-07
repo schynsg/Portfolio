@@ -46,8 +46,7 @@ table {
 body {
   background-color: #1A1B20;
   color: #C1BEBF;
-  font-family: 'Lato', sans-serif;
-  min-height: 100vh; }
+  font-family: 'Lato', sans-serif; }
 
 main:not(.background__pic) {
   padding-left: 3.6%; }
@@ -80,7 +79,8 @@ main {
 
 header {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  top: 0; }
 
 .h1__img {
   width: 17vw;
@@ -111,7 +111,8 @@ a {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 #quit {
   position: fixed;
@@ -124,7 +125,8 @@ a {
   cursor: pointer;
   -webkit-transition: 3s;
   -o-transition: 3s;
-  transition: 3s; }
+  transition: 3s;
+  z-index: 3; }
 
 #links {
   display: none;
@@ -190,7 +192,7 @@ a {
 
 .social__media {
   position: absolute;
-  top: 93.5vh;
+  top: 93vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +225,6 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 189px;
   font-size: 22px; }
   .contact h2 {
     font-family: 'Roboto', sans-serif;
@@ -247,18 +248,12 @@ a {
   .contact__ul p, .contact__ul img {
     display: inline-block; }
   .contact__ul a {
-    color: #C1BEBF;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
+    color: #C1BEBF; }
     .contact__ul a:hover {
       color: #A77F4E; }
       .contact__ul a:hover svg {
         fill: #A77F4E; }
   .contact__ul svg {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
     fill: #C1BEBF;
     margin-right: 5px; }
 
@@ -266,14 +261,11 @@ footer {
   background-color: #C1BEBF;
   text-align: center;
   font-size: 15px;
-  padding: 10px 0px; }
+  padding: 10px 0px;
+  z-index: 0;
+  width: 100%; }
   footer a {
     color: #1A1A20; }
-
-.no-page_main + footer, .main__about + footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
 
 input {
   background-color: transparent;
@@ -285,10 +277,11 @@ input {
 
 label {
   text-transform: uppercase;
-  color: #A77F4E; }
+  color: #C1BEBF; }
 
 .contact__right {
-  width: 49%; }
+  width: 49%;
+  margin-top: 189px; }
 
 form {
   display: -webkit-box;
@@ -317,7 +310,7 @@ form {
 .wpcf7-submit {
   margin-top: 40px;
   color: #1A1A20;
-  padding: 5px 20px;
+  padding: 2px 35px;
   border-radius: 50px;
   background-color: #A77F4E;
   font-size: 22px;
@@ -326,7 +319,7 @@ form {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  .wpcf7-submit:hover {
+  .wpcf7-submit:active {
     background-color: transparent;
     color: #A77F4E; }
 
@@ -352,11 +345,11 @@ form {
   font-size: 6em;
   margin-bottom: 70px; }
 
-.main__about, .main__single {
+.about, .main__single, .contact__main {
   padding-top: 200px;
   margin-left: 5.8%;
   font-size: 22px; }
-  .main__about h2, .main__single h2 {
+  .about h2, .main__single h2, .contact__main h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 700;
@@ -373,11 +366,15 @@ form {
   justify-content: space-between; }
 
 .about__description p {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  max-width: 700px;
+  line-height: 115%;
+  width: 35vw; }
 
 .about__experience {
   width: 900px;
-  margin-left: 18.4%; }
+  margin-left: 23.4%;
+  max-width: 80vw; }
 
 .description__title, .experience__title {
   font-size: 30px;
@@ -407,13 +404,14 @@ form {
     .about__links a:active {
       background-color: transparent;
       color: #C1BEBF; }
-    .about__links a:first-of-type {
-      background-color: #A77F4E;
-      margin-right: 20px;
-      border: 3px solid #A77F4E; }
-      .about__links a:first-of-type:active {
-        background-color: transparent;
-        color: #A77F4E; }
+
+a.about__first-link {
+  background-color: #A77F4E;
+  margin-right: 20px;
+  border: 3px solid #A77F4E; }
+  a.about__first-link:active {
+    background-color: transparent;
+    color: #A77F4E; }
 
 .main__projects {
   padding-top: 200px;
@@ -474,19 +472,13 @@ form {
     display: inline-block;
     padding-right: 60px; }
     .project_links li a {
-      color: #C1BEBF;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
+      color: #C1BEBF; }
       .project_links li a:hover {
         color: #A77F4E; }
         .project_links li a:hover svg {
           fill: #A77F4E; }
     .project_links li svg {
       fill: #C1BEBF;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s;
       margin-right: 5px; }
     .project_links li p {
       display: inline-block; }
@@ -529,3 +521,62 @@ form {
     display: inline-block; }
   .intro__first-link {
     margin-bottom: 10px; } }
+
+main.contact__main {
+  padding-left: 0;
+  margin-left: 0; }
+
+.social__contact {
+  margin-top: 35px; }
+  .social__contact li {
+    display: block;
+    padding-bottom: 10px; }
+  .social__contact p, .social__contact img {
+    display: inline-block; }
+  .social__contact a {
+    color: #C1BEBF; }
+    .social__contact a:hover {
+      color: #A77F4E; }
+      .social__contact a:hover svg {
+        fill: #A77F4E; }
+  .social__contact svg {
+    fill: #C1BEBF;
+    margin-right: 5px; }
+
+.required__labels {
+  font-size: 11px;
+  margin-top: 10px; }
+
+.screen-reader-response, .wpcf7-not-valid-tip {
+  font-size: 11px;
+  margin-bottom: 10px;
+  color: red;
+  text-transform: lowercase; }
+
+.wpcf7-response-output {
+  display: none; }
+
+@media (max-width: 775px) {
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 100px; }
+    .about__content .about__description p {
+      width: 100%; }
+    .about__content .about__experience {
+      margin-left: 0; }
+    .about__content .about__links {
+      position: relative;
+      top: 370px; }
+  .about__sub-title {
+    width: 80vw; } }
+
+div.about__links div {
+  display: inline; }
+
+@media (max-width: 1150px) {
+  div.about__links div {
+    display: block;
+    margin-top: 35px; } }

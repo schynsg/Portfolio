@@ -24,8 +24,12 @@ get_header();
                 <h3 class="description__title">Who's Goran ?</h3>
                 <?php the_field('whos_goran'); ?>
                 <div class="about__links">
-                    <a href="<?php the_field('first_link'); ?>" class="about__first-link"><?php the_field('first_link_text'); ?></a>
-                    <a href="<?php the_field('second_link'); ?>" class="about__second-link"><?php the_field('second_link_text'); ?></a>
+                    <div>
+                        <a href="<?php the_field('first_link'); ?>" class="about__first-link"><?php the_field('first_link_text'); ?></a>
+                    </div>
+                    <div>
+                        <a href="<?php the_field('second_link'); ?>" class="about__second-link"><?php the_field('second_link_text'); ?></a>
+                    </div>
                 </div>
             </div>
     <?php endwhile; else: ?>
