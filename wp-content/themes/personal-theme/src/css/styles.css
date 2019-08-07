@@ -49,12 +49,13 @@ body {
   font-family: 'Lato', sans-serif; }
 
 main:not(.background__pic) {
-  padding-left: 3.6%; }
+  padding-left: 3.6%;
+  padding-right: 3.6%; }
 
 main {
-  padding-bottom: 230px;
   max-width: 2400px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: calc(100vh - 30px); }
 
 .background__pic {
   background-image: url("../images/index-background.jpg");
@@ -416,6 +417,7 @@ a.about__first-link {
 .main__projects {
   padding-top: 200px;
   margin-left: 5.8%;
+  margin-right: 5.8%;
   font-size: 22px; }
   .main__projects h2 {
     font-family: 'Roboto', sans-serif;
@@ -429,10 +431,16 @@ a.about__first-link {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px; }
 
 .project {
-  max-width: 432px; }
+  max-width: 432px;
+  margin-bottom: 40px;
+  padding: 0 5px; }
   .project img {
     width: 100%; }
 
@@ -524,7 +532,9 @@ a.about__first-link {
 
 main.contact__main {
   padding-left: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  min-height: calc(100vh - 255px);
+  margin-bottom: 25px; }
 
 .social__contact {
   margin-top: 35px; }
@@ -580,3 +590,14 @@ div.about__links div {
   div.about__links div {
     display: block;
     margin-top: 35px; } }
+
+@media (min-width: 1179px) and (max-width: 1631px) {
+  .projects__content {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
+
+@media (max-width: 1087px) {
+  .projects__content {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }

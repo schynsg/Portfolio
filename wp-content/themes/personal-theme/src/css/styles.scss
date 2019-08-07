@@ -53,12 +53,13 @@ body{
 
 main:not(.background__pic){
   padding-left: 3.6%;
+  padding-right: 3.6%;
 }
 
 main{
-  padding-bottom: 230px;
   max-width: 2400px;
   margin: 0 auto;
+  min-height: calc(100vh - 30px);
 }
 
 .background__pic{
@@ -459,6 +460,7 @@ a.about__first-link{
 .main__projects{
   padding-top: 200px;
   margin-left: 5.8%;
+  margin-right: 5.8%;
   font-size: 22px;
   h2{
     font-family: 'Roboto', sans-serif;
@@ -472,10 +474,14 @@ a.about__first-link{
   margin-top: 140px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .project{
   max-width: 432px;
+  margin-bottom: 40px;
+  padding: 0 5px;
   img{
     width: 100%;
   }
@@ -593,6 +599,8 @@ a.about__first-link{
 main.contact__main{
   padding-left: 0;
   margin-left: 0;
+  min-height: calc(100vh - 255px);
+  margin-bottom: 25px;
 }
 
 .social__contact{
@@ -663,5 +671,17 @@ div.about__links div{
   div.about__links div{
     display: block;
     margin-top: 35px;
+  }
+}
+
+@media (min-width:1179px) and (max-width:1631px) {
+  .projects__content{
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:1087px) {
+  .projects__content{
+    justify-content: center;
   }
 }
