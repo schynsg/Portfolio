@@ -78,10 +78,10 @@ get_header();
         <div class="other__content">
             <?php
             $exp = new WP_Query([
-                'number_posts' => '3',
+                'posts_per_page' => '3',
                 'post_type' => 'project',
-                'order'=>'DESC',
-                'order_by'=>'date'
+                'order'=>'ASC',
+                'order_by'=>'ID'
             ]);
 
             if ($exp->have_posts()): while ($exp->have_posts()) : $exp->the_post();

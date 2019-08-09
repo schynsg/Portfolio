@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="caa43691-4dc0-497c-bc4b-d57c10e5c56b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/contact-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/acceptance.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/acceptance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/file.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/recaptcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/modules/recaptcha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/wp-contact-form-7.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/contact-form-7/wp-contact-form-7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.scss" afterDir="false" />
     </list>
@@ -23,20 +18,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="682" column="11" selection-start-line="682" selection-start-column="11" selection-end-line="682" selection-end-column="11" />
+            <state relative-caret-position="421">
+              <caret line="343" column="28" selection-start-line="343" selection-start-column="28" selection-end-line="343" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-about.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-projects.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="139" selection-start-line="30" selection-start-column="139" selection-end-line="30" selection-end-column="139" />
-              <folding>
-                <element signature="e#7#37#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -52,8 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hover</find>
-      <find>index</find>
       <find>onclick</find>
       <find>burger</find>
       <find>.social__medi</find>
@@ -81,7 +89,9 @@
       <find>contact__main</find>
       <find>3.6</find>
       <find>5.8</find>
+      <find>.media</find>
       <find>project</find>
+      <find>.about, .main__single, .contact__main</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,13 +108,13 @@
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/404.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-projects.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php" />
         <option value="$USER_HOME$/Desktop/Sans titre - 1.svg" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/src/js/burger.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-contact.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-about.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.scss" />
       </list>
     </option>
@@ -246,16 +256,20 @@
       <workItem from="1564927464239" duration="3334000" />
       <workItem from="1565105384001" duration="4333000" />
       <workItem from="1565179732038" duration="8362000" />
+      <workItem from="1565294256821" duration="2926000" />
+      <workItem from="1565358186854" duration="3517000" />
+      <workItem from="1565375819716" duration="4018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141706000" />
+    <option name="totallyTimeSpent" value="152167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-500" width="1934" height="1067" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15741728" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16115262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,20 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/prepros-6.config">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -370,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
@@ -386,7 +379,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="476">
           <caret line="30" column="139" selection-start-line="30" selection-start-column="139" selection-end-line="30" selection-end-column="139" />
           <folding>
             <element signature="e#7#37#0#PHP" expanded="true" />
@@ -396,8 +389,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/src/css/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="682" column="11" selection-start-line="682" selection-start-column="11" selection-end-line="682" selection-end-column="11" />
+        <state relative-caret-position="421">
+          <caret line="343" column="28" selection-start-line="343" selection-start-column="28" selection-end-line="343" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/template-parts/template-projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/personal-theme/single-project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
         </state>
       </provider>
     </entry>

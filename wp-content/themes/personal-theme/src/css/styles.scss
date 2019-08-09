@@ -51,7 +51,7 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
-main:not(.background__pic){
+main:not(.index__main){
   padding-left: 3.6%;
   padding-right: 3.6%;
 }
@@ -126,7 +126,6 @@ a{
   background: #A77F4E;
   font-size: 32px;
   padding: 16px;
-  transition: 1s;
   cursor: pointer;
   z-index: 2;
 }
@@ -140,7 +139,6 @@ a{
   padding: 16px;
   display: none;
   cursor: pointer;
-  transition: 3s;
   z-index: 3;
 }
 
@@ -215,6 +213,7 @@ a{
   display: flex;
   flex-direction: column-reverse;
   font-size: 18px;
+  padding-left: 3.6%;
   li{
     display: inline-block;
     padding-right: 60px;
@@ -343,7 +342,6 @@ form{
   font-size: 22px;
   cursor: pointer;
   border: 3px solid #A77F4E;
-  transition: 0.5s;
   &:active{
     background-color: transparent;
     color: #A77F4E;
@@ -362,7 +360,6 @@ form{
     border-radius: 50px;
     background-color: #A77F4E;
     border: 3px solid #A77F4E;
-    transition: 0.5s;
 
     &:hover {
       background-color: transparent;
@@ -378,7 +375,6 @@ form{
 
 .about, .main__single, .contact__main{
   padding-top: 200px;
-  margin-left: 5.8%;
   font-size: 22px;
   h2{
     font-family: 'Roboto', sans-serif;
@@ -459,8 +455,6 @@ a.about__first-link{
 
 .main__projects{
   padding-top: 200px;
-  margin-left: 5.8%;
-  margin-right: 5.8%;
   font-size: 22px;
   h2{
     font-family: 'Roboto', sans-serif;
@@ -553,7 +547,7 @@ a.about__first-link{
 }
 
 @media (max-width: 800px) {
-  .media__p{
+  .media__li .media__p{
     visibility: hidden;
     width: 0px;
   }
@@ -597,8 +591,6 @@ a.about__first-link{
 }
 
 main.contact__main{
-  padding-left: 0;
-  margin-left: 0;
   min-height: calc(100vh - 255px);
   margin-bottom: 25px;
 }
@@ -683,5 +675,117 @@ div.about__links div{
 @media (max-width:1087px) {
   .projects__content{
     justify-content: center;
+  }
+}
+
+.other_projects .other__content{
+  display:flex;
+  justify-content: space-around;
+}
+
+@media (max-width:1250px) {
+  .project_vignette{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media (max-width:1000px) {
+  .project_vignette{
+    display: none;
+  }
+}
+
+@media (max-width:1125px) {
+  .full-screen_img{
+    width: 100%;
+  }
+}
+
+@media (max-width:666px) {
+  .links_li:last-child{
+    margin-top: 15px;
+  }
+}
+
+@media (max-width:530px) {
+  .other__content{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:340px) {
+  .project_links li p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width:2500px) {
+  main.contact__main{
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .about, .main__single, .contact__main{
+    margin-left: 5.8%;
+  }
+  .main__projects{
+    margin-left: 5.8%;
+    margin-right: 5.8%;
+  }
+}
+
+@media (max-width:950px) {
+  .contact{
+    flex-direction: column;
+    .social__contact, .contact__ul, .media__li{
+      display: inline-block;
+    }
+    a p{
+      display: none;
+    }
+    li{
+      padding: 0;
+    }
+    svg{
+      padding: 5px 15px;
+      fill: #1A1A20;
+      background-color: #A77F4E;
+    }
+  }
+  .contact__ul{
+    display: inline-block;
+    margin-top: 50px;
+  }
+  .contact__right{
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width:500px) {
+  .contact{
+    svg{
+      padding: 5px 10px;
+      height: 23px;
+      width: 23px;
+    }
+  }
+}
+
+@media (max-width:380px) {
+  .contact{
+    svg{
+      padding: 5px 8px;
+      height: 18px;
+      width: 18px;
+    }
+    form p:nth-child(2), form p:nth-child(3){
+      width: 100%;
+    }
+    form p:nth-child(3), form p:nth-child(4){
+      margin-top: 20px;
+    }
   }
 }

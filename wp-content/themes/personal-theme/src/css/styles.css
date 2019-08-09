@@ -48,7 +48,7 @@ body {
   color: #C1BEBF;
   font-family: 'Lato', sans-serif; }
 
-main:not(.background__pic) {
+main:not(.index__main) {
   padding-left: 3.6%;
   padding-right: 3.6%; }
 
@@ -109,9 +109,6 @@ a {
   background: #A77F4E;
   font-size: 32px;
   padding: 16px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
   cursor: pointer;
   z-index: 2; }
 
@@ -124,9 +121,6 @@ a {
   padding: 16px;
   display: none;
   cursor: pointer;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
   z-index: 3; }
 
 #links {
@@ -201,7 +195,8 @@ a {
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
-  font-size: 18px; }
+  font-size: 18px;
+  padding-left: 3.6%; }
   .social__media li {
     display: inline-block;
     padding-right: 60px; }
@@ -316,10 +311,7 @@ form {
   background-color: #A77F4E;
   font-size: 22px;
   cursor: pointer;
-  border: 3px solid #A77F4E;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
+  border: 3px solid #A77F4E; }
   .wpcf7-submit:active {
     background-color: transparent;
     color: #A77F4E; }
@@ -334,10 +326,7 @@ form {
     padding: 10px 30px;
     border-radius: 50px;
     background-color: #A77F4E;
-    border: 3px solid #A77F4E;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
+    border: 3px solid #A77F4E; }
     .no-page_main a:hover {
       background-color: transparent;
       color: #A77F4E; }
@@ -348,7 +337,6 @@ form {
 
 .about, .main__single, .contact__main {
   padding-top: 200px;
-  margin-left: 5.8%;
   font-size: 22px; }
   .about h2, .main__single h2, .contact__main h2 {
     font-family: 'Roboto', sans-serif;
@@ -416,8 +404,6 @@ a.about__first-link {
 
 .main__projects {
   padding-top: 200px;
-  margin-left: 5.8%;
-  margin-right: 5.8%;
   font-size: 22px; }
   .main__projects h2 {
     font-family: 'Roboto', sans-serif;
@@ -501,7 +487,7 @@ a.about__first-link {
   padding-bottom: 0; }
 
 @media (max-width: 800px) {
-  .media__p {
+  .media__li .media__p {
     visibility: hidden;
     width: 0px; }
   .social__media {
@@ -531,8 +517,6 @@ a.about__first-link {
     margin-bottom: 10px; } }
 
 main.contact__main {
-  padding-left: 0;
-  margin-left: 0;
   min-height: calc(100vh - 255px);
   margin-bottom: 25px; }
 
@@ -601,3 +585,89 @@ div.about__links div {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; } }
+
+.other_projects .other__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+@media (max-width: 1250px) {
+  .project_vignette {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px; } }
+
+@media (max-width: 1000px) {
+  .project_vignette {
+    display: none; } }
+
+@media (max-width: 1125px) {
+  .full-screen_img {
+    width: 100%; } }
+
+@media (max-width: 666px) {
+  .links_li:last-child {
+    margin-top: 15px; } }
+
+@media (max-width: 530px) {
+  .other__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media (max-width: 340px) {
+  .project_links li p {
+    font-size: 18px; } }
+
+@media (max-width: 2500px) {
+  main.contact__main {
+    padding-left: 0;
+    margin-left: 0; }
+  .about, .main__single, .contact__main {
+    margin-left: 5.8%; }
+  .main__projects {
+    margin-left: 5.8%;
+    margin-right: 5.8%; } }
+
+@media (max-width: 950px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contact .social__contact, .contact .contact__ul, .contact .media__li {
+      display: inline-block; }
+    .contact a p {
+      display: none; }
+    .contact li {
+      padding: 0; }
+    .contact svg {
+      padding: 5px 15px;
+      fill: #1A1A20;
+      background-color: #A77F4E; }
+  .contact__ul {
+    display: inline-block;
+    margin-top: 50px; }
+  .contact__right {
+    margin-top: 50px;
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  .contact svg {
+    padding: 5px 10px;
+    height: 23px;
+    width: 23px; } }
+
+@media (max-width: 380px) {
+  .contact svg {
+    padding: 5px 8px;
+    height: 18px;
+    width: 18px; }
+  .contact form p:nth-child(2), .contact form p:nth-child(3) {
+    width: 100%; }
+  .contact form p:nth-child(3), .contact form p:nth-child(4) {
+    margin-top: 20px; } }
