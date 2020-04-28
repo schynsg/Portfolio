@@ -16,7 +16,7 @@
 	<header>
         <h1>
             <a href="<?= get_home_url(); ?>" class="header__link" title="Home">
-                <img src="<?= get_template_directory_uri(); ?>/src/images/logo.svg" alt="Goran Schyns, web & graphic designer" class="h1__img">
+                <img src="<?= get_template_directory_uri(); ?>/src/images/logo-goran-schyns.svg" alt="Goran Schyns, web & graphic designer" class="h1__img">
             </a>
         </h1>
         <div class="nav">
